@@ -11,7 +11,6 @@ public class Lesson2 {
      * (первый отрицательный элемент не должен входить в сумму).
      * Вывести на консоль полученный
      * массив и сумму.
-     * @param args
      */
     public static void main(String[] args) {
         fillArray(array);

@@ -1,25 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="49bca318-ce0c-44ef-a6e4-3cf1d4b7e958" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MnogomernyeMassivy.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lesson1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lesson10.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lesson11.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lesson12.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lesson2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lesson3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lesson4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lesson5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lesson6.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lesson7.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lesson8.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lesson9.java" afterDir="false" />
+    <list default="true" id="49bca318-ce0c-44ef-a6e4-3cf1d4b7e958" name="Changes" comment="1">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lesson1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lesson1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lesson10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lesson10.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lesson11.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lesson11.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lesson12.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lesson12.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lesson2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lesson2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lesson3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lesson3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lesson4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lesson4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lesson5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lesson5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lesson6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lesson6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lesson7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lesson7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lesson8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lesson8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lesson9.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lesson9.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,12 +42,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -62,6 +57,14 @@
       <option name="presentableId" value="Default" />
       <updated>1689723831914</updated>
     </task>
+    <task id="LOCAL-00001" summary="1">
+      <created>1689777377333</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1689777377333</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -74,5 +77,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
   </component>
 </project>

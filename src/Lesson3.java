@@ -11,8 +11,6 @@ public class Lesson3 {
      * digit 1 = 4
      * digit 2 = 45
      * digit 3 = 39
-     *
-     * @param args
      */
     public static void main(String[] args) {
         fillArray(array);

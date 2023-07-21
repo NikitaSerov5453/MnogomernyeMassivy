@@ -5,8 +5,6 @@ public class Lesson1 {
      * Задание 1
      * Сформировать массив, элементами которого будут квадраты соответствующих индексов. Вывести результат на
      * экран.
-     *
-     * @param args
      */
     public static void main(String[] args) {
         squareIndex(8);

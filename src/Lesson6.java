@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Scanner;
 import java.util.concurrent.ThreadLocalRandom;
 
@@ -12,32 +13,61 @@ public class Lesson6 {
      * (если найдено несколько одинаковых элементов – вывести индексы строки и столбца, где есть повторения).
      * Вывести на экран время выполнения поиска, в миллисекундах.
      * Размерность массива должна задаваться с клавиатуры.
-     * @param args
+     *
      */
     public static void main(String[] args) {
         fillArray(array);
         printArray(array);
-        sortArray(array);
+        setCopyArray(array, copyArray);
         long startTime = System.nanoTime();
-        sortArray(array);
-        System.out.println("Минимальное занчение в массиве: " + searchMinValueInArray(array));
+        sortArray(copyArray);
+        setMinValue();
+        setMaxValue();
+        System.out.println("Минимальное занчение в массиве: " + minValue);
+        System.out.println("Максимальное занчение в массиве: " + maxValue);
         long endTime = System.nanoTime();
-        System.out.println((double) (endTime - startTime) / 1000000);
-        long startTime1 = System.nanoTime();
-        System.out.println("Максимальное занчение в массиве: " + searchMaxValueInArray(array));
-        long endTime1 = System.nanoTime();
-        System.out.println((double) (endTime1 - startTime) / 1000000);
+        System.out.println("Время выполнения поиска в миллисекундах: " + (double) (endTime - startTime) / 1000000);
+        System.out.println();
+        System.out.println("Индексы всех минимальных чисел:");
+        printAllValue(array, minValue);
+        System.out.println();
+        System.out.println("Индексы всех максимальных чисел:");
+        printAllValue(array, maxValue);
 
     }
 
     public static int arraySize = scanner().nextInt();
     public static int[][] array = new int[arraySize][arraySize];
-
-    public static ArrayList<Integer> arrayListMinValue = new ArrayList<>();
-    public static ArrayList<Integer> arrayListMaxValue = new ArrayList<>();
+    public static int[][] copyArray = new int[arraySize][arraySize];
+    public static int minValue;
+    public static int maxValue;
 
     public static Scanner scanner() {
         return new Scanner(System.in);
+    }
+
+    public static void setMinValue() {
+        Lesson6.minValue = searchMinValueInArray(copyArray);
+    }
+
+    public static void setMaxValue() {
+        Lesson6.maxValue = searchMaxValueInArray(copyArray);
+    }
+
+    public static void setCopyArray(int[][] array, int[][] copyArray) {
+        for (int i = 0; i < array.length; i++) {
+            System.arraycopy(array[i], 0, copyArray[i], 0, array.length);
+        }
+    }
+
+    public static void printAllValue(int[][] array, int value) {
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array.length; j++) {
+                if (array[i][j] == value) {
+                    System.out.println("строка: " + i + " колонка:" + j);
+                }
+            }
+        }
     }
 
     public static void printArray(int[][] array) {
@@ -51,7 +81,7 @@ public class Lesson6 {
         int minValue = -1000;
         int maxValue = 1000;
         for (int i = 0; i < array.length; i++) {
-            for (int j = 0; j < array.length; j++){
+            for (int j = 0; j < array.length; j++) {
                 array[i][j] = random(minValue, maxValue);
             }
         }

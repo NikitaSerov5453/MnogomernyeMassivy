@@ -9,7 +9,6 @@ public class Lesson9 {
      * 6 9 12 15
      * 10 13 16 18
      * 14 17 19 20
-     * @param args
      */
     public static void main(String[] args) {
 

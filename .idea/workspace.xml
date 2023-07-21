@@ -3,18 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="49bca318-ce0c-44ef-a6e4-3cf1d4b7e958" name="Changes" comment="1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lesson1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lesson1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lesson10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lesson10.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lesson11.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lesson11.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lesson12.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lesson12.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lesson2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lesson2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lesson3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lesson3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lesson4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lesson4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lesson5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lesson5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lesson6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lesson6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lesson7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lesson7.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Lesson8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lesson8.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lesson9.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lesson9.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +53,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689777377333</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="1">
+      <created>1689904791117</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1689904791117</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

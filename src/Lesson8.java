@@ -11,8 +11,8 @@ public class Lesson8 {
      * 12 13 14 05
      * 11 16 15 06
      * 10 09 08 07
-     *
-     *
+     * <p>
+     * <p>
      * Дополнительно: выполнить задачу с использованием
      * только одного цикла + 1 балл.
      */
@@ -22,7 +22,7 @@ public class Lesson8 {
     }
 
     public static int arraySize = scanner().nextInt();
-    public static int counter = 1;
+    public static int counter = 0;
     public static int i = 0;
 
     public static int carriageTransition = 0;
@@ -40,7 +40,7 @@ public class Lesson8 {
         int counter = 0;
         for (int i = 0; i < Math.pow(length, 2); i++) {
             if (counter != length - 1) {
-                System.out.printf("%02d", array[i]);
+                System.out.printf("%02d %s", array[i], "");
                 counter++;
             } else {
                 System.out.printf("%02d %s", array[i], "\n");
@@ -76,28 +76,49 @@ public class Lesson8 {
 
     }
 
+    public static int a = 0;
+    public static int b = 0;
+    public static int c = 1;
+
     public static void fillArray2() {
         for (; i <= array.length; i++) {
-            if (counter <= arrayLength) {
+            if (counter < arrayLength * (a + 1) - b) {
                 array[i] = counter;
                 counter++;
-            } else if (counter < arrayLength * 2) {
+                if (counter == (arrayLength * (a + 1) - b)) {
+                    b = b + c;
+                }
+            }
+            else if (counter < arrayLength * (a + 2) - b) {
                 i = i + arraySize - 1;
                 array[i] = counter;
                 counter++;
-            } else if (counter < arrayLength * 3 - 1) {
+                if (counter == (arrayLength * (a + 2) - b)) {
+                    b = b + c;
+                }
+            }
+            else if (counter < arrayLength * (a + 3) - b) {
                 i = i - 2;
                 array[i] = counter;
                 counter++;
-            } else if (counter < arrayLength * 4 - 3) {
+                if (counter == (arrayLength * (a + 3) - b)) {
+                    b = b + c;
+                }
+            }
+            else if (counter < arrayLength * (a + 4) - (b + c)) {
                 i = i - arraySize - 1;
                 array[i] = counter;
                 counter++;
+                if (counter == (arrayLength * (a + 4) - b)) {
+                    b = b + c;
+                }
             }
             else {
                 carriageTransition = carriageTransition + arraySize + 1;
                 i = carriageTransition;
                 arrayLength = arrayLength - 2;
+                a = a + 4;
+                c = c + 2;
                 fillArray2();
             }
         }
@@ -114,6 +135,12 @@ public class Lesson8 {
      * 70 71 72 73 74 75 76 77 78 79    30 59 80 79 78 77 76 75 50 17
      * 80 81 82 83 84 85 86 87 88 89    29 58 57 56 55 54 53 52 51 18
      * 90 91 92 93 94 95 96 97 98 99    28 27 26 25 24 23 22 21 20 19
+     *
+     * 00 01 02 03 04
+     * 05 06 07 08 09
+     * 10 11 12 13 14
+     * 15 16 17 18 19
+     * 20 21 22 23 24
      */
 
     public static void index(int arraySize) {

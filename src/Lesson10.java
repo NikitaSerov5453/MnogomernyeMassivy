@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Lesson10 {
     /**
      * Задание 10
@@ -15,4 +17,13 @@ public class Lesson10 {
     public static void main(String[] args) {
 
     }
+
+    public static void printArray(int[][] array) {
+        for (int[] a : array) {
+            System.out.print(Arrays.toString(a) + "\n");
+        }
+        System.out.println();
+    }
+
+
 }

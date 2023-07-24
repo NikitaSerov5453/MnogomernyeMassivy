@@ -17,7 +17,7 @@ public class Lesson8 {
      * только одного цикла + 1 балл.
      */
     public static void main(String[] args) {
-        fillArray2();
+        fillArray();
         printArray(array, arraySize);
     }
 
@@ -53,7 +53,7 @@ public class Lesson8 {
 
 
 
-    public static void fillArray2() {
+    public static void fillArray() {
         for (; i <= array.length; i++) {
             if (counter < arrayLength * (a + 1) - b) {
                 array[i] = counter;

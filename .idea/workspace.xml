@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="49bca318-ce0c-44ef-a6e4-3cf1d4b7e958" name="Changes" comment="8 id done">
+    <list default="true" id="49bca318-ce0c-44ef-a6e4-3cf1d4b7e958" name="Changes" comment="1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Lesson10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lesson10.java" afterDir="false" />
     </list>
@@ -81,7 +81,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690083951741</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="1">
+      <created>1690256192243</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1690256192243</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -96,9 +103,9 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="1" />
     <MESSAGE value="2" />
     <MESSAGE value="8 id done" />
-    <option name="LAST_COMMIT_MESSAGE" value="8 id done" />
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
   </component>
 </project>

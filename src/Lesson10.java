@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -23,11 +24,15 @@ public class Lesson10 {
         cinemaHall[2][4] = 1;
         printArray(cinemaHall);
         searchAvailableSeats(cinemaHall, buySeats());
+
+
     }
 
     public static int rows = scanner().nextInt();
     public static int lengthRows = scanner().nextInt();
     public static int[][] cinemaHall = new int[rows][lengthRows];
+    public static ArrayList<Integer> firstIndexArray = new ArrayList<>();
+    public static ArrayList<Integer> lastIndexArray = new ArrayList<>();
 
 
     public static void printArray(int[][] array) {
@@ -37,36 +42,50 @@ public class Lesson10 {
         System.out.println();
     }
 
-    public static void searchAvailableSeats(int[][] array, int seats) {
-        int counter = 0;
-        int maximumAvailableSeats = 0;
-        int indexJ = -1;
-        if (seats < lengthRows) {
+    public static void getFirstIndex(int[] array) {
+        int firstIndex = -1;
+        for (int i = 0; i < lengthRows; i++) {
+            if (array[i] == 0 && firstIndex == -1) {
+                firstIndex = i;
+                firstIndexArray.add(firstIndex);
+            }
+            if (array[i] != 0) {
+                firstIndex = -1;
+            }
+        }
+    }
+
+    public static void getLastIndex(int[] array) {
+        int lastIndex = -1;
+        for (int i = 0; i < lengthRows; i++) {
+            if (array[i] == 1 && lastIndex == -1) {
+                lastIndex = i - 1;
+                lastIndexArray.add(lastIndex);
+            } else if (i == lengthRows - 1) {
+                lastIndex = i;
+                lastIndexArray.add(lastIndex);
+            } else {
+                lastIndex = -1;
+            }
+        }
+    }
+
+    public static void searchAvailableSeats(int[][] cinemaHall, int seats) {
+        if (seats <= lengthRows) {
             for (int i = 0; i < rows; i++) {
-                for (int j = 0; j < lengthRows; j++) {
-                    if (array[i][j] == 0) {
-                        counter++;
-                        if (indexJ == -1) {
-                            indexJ = j;
-                            System.out.println(indexJ);
-                        }
-                    } else {
-                        counter = 0;
-                        indexJ = -1;
-                    }
-                    if (counter > maximumAvailableSeats) {
-                        maximumAvailableSeats = counter;
-                    }
-                    if (j == lengthRows - 1) {
-                        System.out.println("Подходящие свободные места: " + (i + 1) + " ряд" + " = " + maximumAvailableSeats);
-                        counter = 0;
-                        maximumAvailableSeats = 0;
-                        indexJ = -1;
+                getFirstIndex(cinemaHall[i]);
+                getLastIndex(cinemaHall[i]);
+                for (int j = 0; j < lastIndexArray.size(); j++) {
+                    if ((lastIndexArray.get(j) - firstIndexArray.get(j)) + 1 >= seats) {
+                        System.out.println("подходящие места ряд: " + (i + 1) + " места с " +
+                                (firstIndexArray.get(j) + 1) + " по " + (lastIndexArray.get(j) + 1));
                     }
                 }
+                firstIndexArray.clear();
+                lastIndexArray.clear();
             }
         } else {
-            System.out.println("В ряду нет данного колличества мест");
+            System.out.println("В ряду нет такого колличества мест");
         }
     }
 

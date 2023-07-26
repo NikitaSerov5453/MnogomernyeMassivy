@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Lesson11 {
     /**
      * Задание 11
@@ -8,5 +10,18 @@ public class Lesson11 {
      */
     public static void main(String[] args) {
 
+    }
+
+    public static final String ONE1 = "один";
+    public static final String ONE1000 = "одна";
+    public static final String ONE100 = "сто";
+    public static final String ONE10 = "десять";
+    public static final String TWO = "два";
+    public static final String TWO2000 = "две";
+    public static final String TWO100 = "двести";
+    public static final String TWO10 = "двадцать";
+
+    public static Scanner scanner() {
+        return new Scanner(System.in);
     }
 }

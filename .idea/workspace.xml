@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="49bca318-ce0c-44ef-a6e4-3cf1d4b7e958" name="Changes" comment="1">
+    <list default="true" id="49bca318-ce0c-44ef-a6e4-3cf1d4b7e958" name="Changes" comment="10 is done">
+      <change afterPath="$PROJECT_DIR$/src/Chess.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lesson10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lesson10.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lesson11.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lesson11.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lesson12.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lesson12.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690256192243</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="10 is done">
+      <created>1690275478690</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1690275478690</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -106,6 +115,7 @@
     <MESSAGE value="2" />
     <MESSAGE value="8 id done" />
     <MESSAGE value="1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1" />
+    <MESSAGE value="10 is done" />
+    <option name="LAST_COMMIT_MESSAGE" value="10 is done" />
   </component>
 </project>

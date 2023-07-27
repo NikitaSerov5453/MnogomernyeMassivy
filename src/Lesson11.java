@@ -1,3 +1,6 @@
+import com.ibm.icu.text.RuleBasedNumberFormat;
+
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Lesson11 {
@@ -9,17 +12,13 @@ public class Lesson11 {
      * Например, при вводе числа 1125, программа должна вывести на консоль«одна тысяча сто двадцать пять».
      */
     public static void main(String[] args) {
-
+        System.out.println(numberToRussianString(scanner().nextInt()));
     }
 
-    public static final String ONE1 = "один";
-    public static final String ONE1000 = "одна";
-    public static final String ONE100 = "сто";
-    public static final String ONE10 = "десять";
-    public static final String TWO = "два";
-    public static final String TWO2000 = "две";
-    public static final String TWO100 = "двести";
-    public static final String TWO10 = "двадцать";
+    public static String numberToRussianString(int scanner) {
+        RuleBasedNumberFormat nf = new RuleBasedNumberFormat(Locale.forLanguageTag("ru"), RuleBasedNumberFormat.SPELLOUT);
+        return nf.format(scanner);
+    }
 
     public static Scanner scanner() {
         return new Scanner(System.in);
